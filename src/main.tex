@@ -11,8 +11,9 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
-\input{glyphtounicode}
+% \input{glyphtounicode}
 \usepackage{comment}
+\usepackage{changepage}
 \pdfgentounicode=1
 
 % Margins
@@ -39,7 +40,8 @@
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Custom Commands
-\newcommand{\resumeItem}[1]{\item\small{#1 \vspace{-2pt}}}
+% \newcommand{\resumeItem}[1]{\item\small{#1 \vspace{-2pt}}}
+\newcommand{\resumeItem}[1]{\item[$\bullet$]\small{#1 \vspace{-2pt}}}
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
@@ -60,26 +62,35 @@
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]} 
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 
-% Resume
 \begin{document}
 
 %----------HEADING----------
-
-\begin{tabularx}{\textwidth}{X r}
-  \textbf{\LARGE Ashish Kushwaha} & \href{https://github.com/ashish-kus}{\textcolor{blue}{github.com/ashish-kus}} \\
-  \textbf{Software Developer Engineer} & \href{mailto:ashish.kus2408@gmail.com}{\textcolor{blue}{ashish.kus2408@gmail.com}} \\
-  Mobile: +91 7525874187 & \href{https://www.linkedin.com/in/ashish-kushwaha2408}{\textcolor{blue}{linkedin.com/in/ashish-kushwaha2408}} \\
-\end{tabularx}
-
+\begin{center}
+  \textbf{\LARGE Ashish Kushwaha} \\
+  \vspace{2pt}
+  \textbf{\normalsize Software Development Engineer} \\
+  \vspace{2pt}
+  \small
+  \href{https://github.com/ashish-kus}{github.com/ashish-kus} $|$ 
+  \href{mailto:ashish.kus2408@gmail.com}{ashish.kus2408@gmail.com} $|$ 
+  \href{https://www.linkedin.com/in/ashish-kushwaha2408}{linkedin.com/in/ashish-kushwaha2408} $|$ 
+  \href{tel:+917525874187}{+91 7525874187}
+\end{center}
+\vspace{-8pt}
 %-----------EDUCATION-----------
 \section{Education}
 \resumeSubHeadingListStart
   \resumeSubheading
     {Gautam Buddha University}{Greater Noida, Uttar Pradesh}
-    {B. Tech + M. Tech CSE in Software Engineering, CGPA: 8.5}{August 2020 -- Present}
+    {Bachelor of Technology in Computer Science and Engineering , CGPA: 8.2}{08/2020 -- 06/2024}
+  \resumeSubheading
+    {Gautam Buddha University}{Greater Noida, Uttar Pradesh}
+    {M.Tech in CSE with Specialization in Software Engineering, CGPA: 8.5}{08/2024 -- 06/2025}
+\begin{comment}
   \resumeSubheading
     {Narayana IIT Academy, Raviryala}{Hydrabad, Telangana State}
     {Intermediate – Physics, Chemistry, Mathematics: 88\%}{March 2017 -- March 2019}
+\end{comment}
 \resumeSubHeadingListEnd
 
 
@@ -87,22 +98,23 @@
 \section{Experience}
 \resumeSubHeadingListStart
   \resumeSubheading
-    {Software Development Engineer | Arial Labs}{June 2024 – April 2025}
+    {Software Development Engineer | Arial Labs}{06/2024 – 05/2025}
     {California, Remote}{}
     \resumeItemListStart
-      \resumeItem{Independently developed the company’s core Chrome extension using React.js, Tailwind CSS, and Manifest V3 with cross-browser support, following SDLC best practices.}
-      \resumeItem{Integrated Claude API with backend services using AWS Lambda, DynamoDB, and S3 to enable serverless, scalable AI-powered functionality, while maintaining code via GitHub and ensuring cloud security awareness.}
-      \resumeItem{Configured and managed AWS environments, deploying the MVP through automated CI/CD pipelines, and collaborated via Jira to resolve issues with strong troubleshooting and analytical skills.}
+      \resumeItem{Independently developed the company’s core product MVP integrating Claude API  with AWS serverless backend services.}
+      \resumeItem{Set up CI/CD pipelines, monitoring, and infrastructure automation using Docker, GitHub Actions, and Kubernetes.}
+      \resumeItem{Built scalable SaaS architecture ensuring scalability and availability within 3 months, acquiring early customer acquisition.}
     \resumeItemListEnd
 
   \resumeSubheading
-    {Internship Trainee | Samsung Innovation Campus}{June 2024 – Sept 2024}
-    {Greater Noida, Offline}{}
+    {Samsung Innovation Campus — Artificial Intelligence Training}{ 06/2024 – 09/2024}
+    {Greater Noida, Onsite}{}
     \resumeItemListStart
-      \resumeItem{Developed and fine-tuned machine learning and AI models using Python, TensorFlow, and PyTorch.}
-      \resumeItem{Applied AI techniques for data classification, prediction, and pattern recognition on large datasets.}
-      \resumeItem{Performed ETL processes, exploratory data analysis (EDA), and created visual dashboards using Power BI and Excel.}
+      \resumeItem{Completed comprehensive training on Artificial Intelligence covering Machine Learning and Data Analytics.}
+      \resumeItem{Developed models and fine-tuned LLM and Gen AI models using Python, TensorFlow, PyTorch, flux and more.}
+      \resumeItem{Optimized training performance by managing system resources, GPU utilization, and process scheduling on Linux.}
     \resumeItemListEnd
+
 
 \begin{comment}
   \resumeSubheading
@@ -115,11 +127,11 @@
 \end{comment}
 
     \resumeSubheading
-    {Web Developer Intern | Gautam Buddha University}{March 2023 – June 2023}
+    {Web Developer Intern | Gautam Buddha University}{03/2023 – 06/2023}
     {Greater Noida, in campus}{}
     \resumeItemListStart
-      \resumeItem{Designed and developed a frontend of web app with MERN stack to manage and track job applicants for university positions.}
-      \resumeItem{Collaborated with the Registrar’s Office to gather requirements and deliver features, optimizing the hiring process.}
+      \resumeItem{Developed a MERN stack webapp to manage and track job applicants, improving recruitment efficiency by 30\%.}
+      \resumeItem{Implemented 5+ REST APIs and integrated MongoDB for robust and scalable data management.}
     \resumeItemListEnd
 \resumeSubHeadingListEnd
 
@@ -129,13 +141,14 @@
 \resumeSubHeadingListStart
 
 \resumeProjectHeading
-  {HireLift}{https://chromewebstore.google.com/detail/hirelift/gchcmaknjamkfbcgbafcchcglpeagidi}{Chrome Extension APIs, WebSockets, AWS Lambda, S3, DynamoDB, and REST APIs.}{}
+  {HireLift}{https://chromewebstore.google.com/detail/hirelift/gchcmaknjamkfbcgbafcchcglpeagidi}{Chrome Extension APIs, AWS, WebSockets and REST APIs.}{}
     \resumeItemListStart
       \resumeItem{AI-powered Chrome extension used by 10+ hiring managers across 60+ interviews to streamline technical evaluations.}
-      \resumeItem{Integrates with Google Meet/MS Teams to analyze live captions and JD–CV uploads, generating real-time questions.}
+      \resumeItem{Integrates with 4+ platforms to analyze live captions and JD–CV uploads, generating real-time questions.}
       \resumeItem{Generates post-interview summaries with tech skills, JD alignment, and key candidate insights via the dashboard.}
     \resumeItemListEnd
 
+\begin{comment}
   \resumeProjectHeading
   {Mtag Gen}{https://github.com/ashish-kus/SEO_metaTag_generater}{Meta Tag Generator $|$ HTML, CSS, JavaScript, Netlify}{}
   \resumeItemListStart
@@ -151,25 +164,7 @@
       \resumeItem{Includes Masonry layout, category filtering, pin detail view with comments, and secure pin creation with upload previews.}
     \resumeItemListEnd
 
-
 \resumeProjectHeading
-  {Huegen – Systems Theme Generator}{https://github.com/ashish-kus/huegen}{ C++17, OpenCV, nlohmann/json, linux, CMake, Template Engine}{}
-    \resumeItemListStart
-      \resumeItem{A C++17 tool to extract dominant colors from images using K-means clustering and LAB-based perceptual filtering.}
-      \resumeItem{Built a template engine to auto-generate multi-format theme files (HEX, RGB, HSL, etc.) for Waybar, Hyprland, and more.}
-      \resumeItem{Designed a modular architecture with customizable templates and automation hooks for instant theme application.}
-    \resumeItemListEnd
-
-
-\resumeProjectHeading
-{Waybar-Hotspot}{https://github.com/ashish-kus/waybar-hotspot}{ Bash, Zenity, create\_ap, QR}{}
-  \resumeItemListStart
-    \resumeItem{Waybar module for monitoring and managing Wi-Fi hotspot status with graphical prompts using Zenity.}
-    \resumeItem{Supports custom configurations for create\_ap and QR code display in tooltips for easy access.}
-  \resumeItemListEnd
-
-
-  \resumeProjectHeading
   {Batfetch}{https://github.com/ashish-kus/batfetch}{Linux Battery Information Analyzer $|$ Shell, JSON, CLI, Makefile, AUR}{}
     \resumeItemListStart
       \resumeItem{Command-line tool inspired by \texttt{pfetch}, display detailed battery information in a clean format with optional JSON output.}
@@ -177,17 +172,46 @@
       \resumeItem{Open source project with 4 open, 4 closed and 2 closed, 1 open pull request. This is avalable on Arch user Repositories.}
     \resumeItemListEnd
 
+    
+\resumeProjectHeading
+{Waybar-Hotspot}{https://github.com/ashish-kus/waybar-hotspot}{ Bash, Zenity, create\_ap}{}
+  \resumeItemListStart
+    \resumeItem{Waybar module for monitoring and managing Wi-Fi hotspot status with graphical prompts using Zenity.}
+    \resumeItem{Supports custom configurations for create\_ap and QR code display in tooltips for easy access.}
+  \resumeItemListEnd
+
+\end{comment}
+
+\resumeProjectHeading
+  {Huegen – Systems Theme Generator}{https://github.com/ashish-kus/huegen}{ C++17, OpenCV, linux}{}
+    \resumeItemListStart
+      \resumeItem{A C++17 tool to extract dominant colors from images using K-means clustering and LAB-based perceptual filtering.}
+      \resumeItem{Template engine to auto-generate theme files suporting 4+ color formats and 10+ application by default.}
+      \resumeItem{Designed a modular architecture with customizable templates and automation hooks for instant theme application.}
+    \resumeItemListEnd
+
+
+  \resumeProjectHeading
+  {Research Papper}{https://github.com/ashish-kus}{Adaptive Task-Based CPU Scaling for Efficient Power Allocation in Edge Computing}{}
+    \resumeItemListStart
+      \resumeItem{Proposed a lightweight, task-based CPU frequency scaling framework and daemon-driven architecture for reduce power consumption and thermal stress in IoT devices.}
+      \resumeItem{Achieved 90\% reduction in CPU frequency variation and 6–8\% lower average temperature on Raspberry Pi 3B.}
+      \resumeItem{Published in Springer LNCS, CVR 2025, by NIT Goa, sponsored by the Soft Computing Research Society.}
+  \resumeItemListEnd
+
 
 \resumeSubHeadingListEnd
 
 \section{Technical Skills}
-   \resumeItemListStart[label={}]
-      \resumeItem{  \textbf{Programming Languages}: C++, C, Bash, JavaScript, Python, Lua, LaTeX, HTML, CSS. } 
-       \resumeItem{ \textbf{Frameworks \& Libraries}: ReactJS, FXTUI, TailwindCSS, Chrome Extensions, YAML.}
-       \resumeItem{\textbf{Databases}: MySQL, MongoDB. }
-       \resumeItem{\textbf{Tools}: SEO, AWS, QEMU, Linux, Git, GitHub, github actions, Docker, nginx, Linux, S3, cloudWatch, Vagrant.}
-       \resumeItem{ \textbf{Soft Skills}: Effective Communication, Problem-Solving, Leadership, Adaptability, Team Collaboration. }
-  \resumeItemListEnd
+
+\begin{adjustwidth}{0.25in}{0in}
+  \textbf{Programming Languages}: C++, C, Bash, JavaScript, Python, Lua, LaTeX, HTML, CSS.\\
+  \textbf{Frameworks \& Libraries}: ReactJS, FXTUI, TailwindCSS, Chrome Extensions, YAML.\\
+  \textbf{Databases}: MySQL, MongoDB.\\
+  \textbf{Tools}: SEO, AWS, QEMU, Linux, Git, GitHub Actions, Docker, Nginx, Vagrant.\\
+  \textbf{Soft Skills}: Effective Communication, Problem-Solving, Leadership, Adaptability, Team Collaboration.
+\end{adjustwidth}
+
 
 %-----------COMMUNITY-----------
 \section{Certification, Publication \& Achievements}
