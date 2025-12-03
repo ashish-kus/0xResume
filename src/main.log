@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.24)  21 OCT 2025 23:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.24)  3 DEC 2025 11:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -297,8 +297,8 @@ LaTeX Font Info:    Trying to load font information for U+lasy on input line 74.
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 85.
- Excluding 'comment' comment. Excluding 'comment' comment. Excluding 'comment' comment.
+(Font)              <7> on input line 86.
+ Excluding 'comment' comment. Excluding 'comment' comment. Excluding 'comment' comment. Excluding 'comment' comment.
 
 [1
 
@@ -308,7 +308,7 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: E9C01B7B1816A6AC2C9B6782BAB280B6;650.
+(rerunfilecheck)             Checksum: C4FD2E6248CA451DDA28D184A3C44223;650.
  ) 
 Here is how much of TeX's memory you used:
  10988 strings out of 473190
@@ -319,7 +319,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  75i,11n,79p,299b,456s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </opt/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on main.pdf (1 page, 142798 bytes).
+Output written on main.pdf (1 page, 142655 bytes).
 PDF statistics:
  88 PDF objects out of 1000 (max. 8388607)
  66 compressed objects within 1 object stream
