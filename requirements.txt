@@ -1,0 +1,4 @@
+pinecone 
+langchain_text_splitters 
+langchain_openai 
+PyPDF2 
