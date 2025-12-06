@@ -6,9 +6,6 @@ from PyPDF2 import PdfReader
 
 PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-# INDEX_NAME = os.getenv("PINECONE_INDEX", "resume-index")
-# RESUME_URL = os.environ.get("RESUME_URL", "https://ashishkus-resume.s3.ap-south-1.amazonaws.com/Ashish_Kushwaha.pdf")
-
 INDEX_NAME = "my-resume-vector"
 PDF_PATH = "./Ashish_Kushwaha.pdf"  # PDF already inside Docker container
 
