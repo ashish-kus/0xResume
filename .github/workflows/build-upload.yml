@@ -20,7 +20,8 @@ jobs:
         run: |
           # Build image using Dockerfile in repo
           # Tag image as 'resume-builder'
-          docker build -t resume-builder .
+          # docker build -t resume-builder .
+          docker build -f ./Docker/Dockerfile.resume -t resume-builder .
 
       # 3️⃣ Create output folder for mounting
       - name: Create output folder

@@ -1,6 +1,0 @@
-Independently developed the company’s core product MVP. Integrated Claude API  with AWS serverless backend services enabling scalable ai-powered functionality.
-
- using AWS Lambda, DynamoDB, and S3 to enable serverless, , while maintaining code via GitHub and ensuring cloud security awareness.
-
-Configured and managed AWS environments, deploying the MVP through automated CI/CD pipelines, and collaborated via
-Jira to resolve issues with strong troubleshooting and analytical skills.
