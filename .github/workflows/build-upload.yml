@@ -34,6 +34,7 @@ jobs:
           docker run --rm \
             -v ${{ github.workspace }}/output:/app/output \
             -e S3_BUCKET=${{ secrets.S3_BUCKET }} \
+            -e AWS_DEFAULT_REGION=ap-south-1 \
             -e AWS_ACCESS_KEY_ID=${{ secrets.AWS_ACCESS_KEY_ID }} \
             -e AWS_SECRET_ACCESS_KEY=${{ secrets.AWS_SECRET_ACCESS_KEY }} \
             -e PINECONE_API_KEY=${{ secrets.PINECONE_API_KEY }} \
