@@ -7,7 +7,7 @@ PDF_NAME="Ashish_Kushwaha.pdf"
 # Upload to S3 (requires environment variables)
 # Upload to S3 (requires environment variables)
 if [ -n "$S3_BUCKET" ]; then
-  aws s3 cp $PDF_NAME s3://$S3_BUCKET/$PDF_NAME
+  aws s3 cp $PDF_PATH s3://$S3_BUCKET/$PDF_NAME
   echo "PDF uploaded to S3 Bucker. "
 fi
 
